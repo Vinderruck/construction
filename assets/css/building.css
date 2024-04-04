@@ -1,0 +1,105 @@
+ 
+.skyline{
+    width:100%;
+    height:100%;
+    background-color:burlywood;
+    align-items: center;
+    justify-content: space-evenly;
+    position:relative;
+}  
+.sky {
+    
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ffcf33,
+        #ffcf33 20%,
+        #ffff66 21%,
+        #bbeeff 100%
+      );
+  }
+  
+.roof{
+    width:50%;
+    height:40%;
+    margin:auto;
+    margin-bottom:0;
+
+    margin-top: 0px;
+    border-bottom: 7vh solid grey;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+ 
+
+}
+.upper{
+    width:50%;
+    height:50%;
+    margin:auto;
+    margin-bottom:0;
+    display:flex;
+    margin-top:0px;
+     
+    
+}
+/*---descendant of upper----*/
+.upper_1 {
+    width:35%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: burlywood;
+}
+.upper_2 {
+    width:30%;
+    height:100%;
+    background-color: burlywood;}
+   
+.upper_3 {
+    width:35%;
+    height:100%;
+    background-color: burlywood;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+ /*------descendant of upper_2-----*/
+ .door_2{
+    width:50%;
+    height:80%;
+    margin:auto;
+    margin-bottom:0;
+    margin-top:40px;
+background-color: #000;
+border:2px double white;
+}
+ /*------descendant of upper_3-----*/
+ .window_3{
+    width:3%;
+    height:50%;
+    background-color:whitesmoke;
+    padding:10px;
+    margin-left:5px;
+    display:flex;
+    flex-direction: column;
+ }
+ .window_in{
+    width:20%;
+    height:30%;
+    border-radius:10px;
+    margin:auto;
+ }
+/*----lower building-----*/
+.block{
+    background-color: sandybrown;
+    width:4px;
+     
+    
+}
+/*-----images-----*/
+
+
+
+/*---media query----*/
+ 
