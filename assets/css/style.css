@@ -178,10 +178,11 @@ background-image: url(../image/sca.jpg);
   margin:50px auto;
   height:auto;
   width:90%;
-  font-size:30px;
+  font-size:20px;
   padding:10px;
   font-family:serif;
   background-color:white;
+  border-radius:20px;
 }
 /*---image slide-----*/
 .count{
@@ -218,6 +219,7 @@ background-image: url(../image/sca.jpg);
   margin-left:20px; 
   font-size:20px;
   margin-top:10px;
+   text-align:center;
  }
  .back{
   width:40%;
@@ -227,9 +229,10 @@ padding:10px;
 margin-left:10px; 
 font-size:20px;
 margin-top:10px;
+   text-align:center;
 }
  .too{
- width:100%;
+ width:90%;
  max-width:600px;
   border:1px solid black;
   margin:auto;
@@ -345,7 +348,7 @@ color:greenyellow;
   legend{
     font-weight: bolder;
     text-decoration:underline;
-    font-size:30px;
+    font-size:25px;
     margin:0 auto;
     color:skyblue;
    }
