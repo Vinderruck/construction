@@ -38,17 +38,4 @@ Submitbutton.addEventListener("click", function(){
     alert("fill the fields")
   }
 })
-// accessing the service
-function displayImage() {
-  const imageContainer = document.getElementsByClassName("count");
-  const images = imageContainer.querySelectorAll("img");
-  images[currentImageIndex].style.display = "block"; // Show the current image
-
-  // Set the time interval for automatic image change (in milliseconds)
-  const interval = 3000; // Change image every 3 seconds
-
-  setInterval(() => {
-    slideImage("right"); // Change image to the right (can modify to "left" for left-to-right)
-  }, interval);
-}
-a
+ 
