@@ -6,6 +6,7 @@
     <title>DAWA CONSTRUCTION LTD</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/building.css">
+   
 </head>
 <body>
     <div class="start">
@@ -27,27 +28,40 @@
                 </ul>
             </div>
         </header>
-        
+        <div class="headfi">
+        <h1>DAWA CONSTUCTION WORKS LTD </h1>
+        <b><p class="for">FOR GENERATIONS</P></b>
+        </div>
         <main>
-<h1>DAWA CONSTUCTION WORKS LTD </h1>
-  <b><p class="for">FOR GENERATION</P></b>    
+        </main>     
+
     <hr><br> 
     <div class="container">
     <div class="image-slider">
-        <h4>OUR GROWTH IS BUILT BY YOUR TRUST TO SERVE YOU</h4>
+        <h4>WE <BR>BELIEVE OUR GROWTH IS BUILT BY YOUR TRUST<br> TO SERVE YOU</h4>
     </div>
-    <div class="image"><h4>WE ARE EXPERIENCED CILVIL ENGINEERS WITH QUALITY WORK</h4> </div>
-    <div class="slider"><h4>TRANSPARANCY PRICING AND OPEN PROJECT EXPECTATIONS</h4></div>
-     
+    <div class="image"><h4>WE <br>ARE EXPERIENCED CIVIL ENGINEERS WITH QUALITY <br>WORK OUT</h4> </div>
+    <div class="slider"><h4>HIGH <BR>LEVEL TRANSPARANCY ACCURATE BOQS AND OPEN PROJECT EXPECTATIONS</h4></div>
+        
     </div>
-</main>
+            <div class="addition" ><p >At Dawa Construction Ltd, we understand that building your dream project requires more than just bricks and mortar. 
+                <div class="divider div"></div> That's why we prioritize exceptional customer support throughout the entire construction process. 
+                <div class="divider div"></div>Our dedicated team is here to listen to your needs, answer your questions, 
+                and address any concerns you may have along the way. <div class="divider div"></div> We believe clear communication 
+                and open collaboration are key to a successful and stress-free building experience.</p></div>
     <div class="count">
-        <img src="./assets/image/plan.jpeg" alt="plan" id="plan" class="myslide">
-        <img src="./assets/image/harmmer.jpg" alt="harmmer" id="harmmmer" class="myslide" style="display:none;">
-        <img src="./assets/image/iron.jpeg" alt="Iron" id="iron"  class="myslide" style="display:none;">
-        <img src="./assets/image/build.jpg" alt="building"  id="building" class="myslide" style="display:none;">
-        <img src="./assets/image/stone.jpg" alt="stone" id="stone"  class="myslide" style=" display:none;">
-        <img src="./assets/image/rail.jpg" alt="rail" id="rail" class="myslide" style="display:none;">
+        <div class="slides">
+        <img class="slide"  src="./assets/image/plan.jpeg" alt="plan" >
+       <img class="slide" src="./assets/image/harmmer.jpg" alt="harmmer" >
+       <img  class="slide"  src="./assets/image/iron.jpeg" alt="Iron" >
+       <img  class="slide"  src="./assets/image/build.jpg" alt="building">
+        <img  class="slide"  src="./assets/image/stone.jpg" alt="stone" >
+        <img class="slide"  src="./assets/image/rail.jpg" alt="rail" >
+        <div class="buton">
+        <button class="front"  onclick="prevSlide()">prev</button>
+        <button class="back" onclick="nextSlide()">next</button>
+       </div>
+    </div>
     </div>
 
 
@@ -57,7 +71,41 @@
         
         <p> Dawa contruction works ltd We live to build </p>
 </footer>
-<script src="./assets/js/script.js"></script>
+ 
 
+<script >const slides=document.querySelectorAll(".slides img");
+    let slideIndex=0;
+    let interval=null;
+    
+    document.addEventListener("DOMContentLoaded",normaldisplay);
+    function normaldisplay(){
+    if(slides.length>0){
+    slides[slideIndex].classList.add("display");
+    interval= setInterval(nextSlide,5000)
+     console.log(interval)}
+    }
+    function showSlide(Index){
+        if(Index>=slides.length){
+            slideIndex=0;
+        }
+        else if(Index < 0){
+            slideIndex=slides.length-1;
+        }
+    slides.forEach(slide=>{
+    slide.classList.remove("display");
+    
+    }) ;
+    slides[slideIndex].classList.add("display");
+    
+    }
+    function prevSlide(){
+        clearInterval(interval)
+        slideIndex--
+        showSlide(slideIndex);}
+        function nextSlide(){
+            slideIndex++;
+            showSlide(slideIndex);
+        }
+</script>
     </body>
 </html>
