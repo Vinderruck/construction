@@ -50,7 +50,7 @@ img{
   display:flex;
 }
 .nav ul li{
- font-size: 17px;
+ font-size: 13px;
  padding:3px 4px;
  margin:5px;
 }
@@ -179,7 +179,7 @@ background-image: url(../image/sca.jpg);
   margin:50px auto;
   height:auto;
   width:90%;
-  font-size:30px;
+  font-size:17px;
   padding:10px;
   font-family:serif;
   background-color:white;
